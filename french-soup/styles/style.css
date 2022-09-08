@@ -1,9 +1,116 @@
-/*Some necessary adjustments*/
-h1, body, html, main {
-  margin: 0;
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
-/*Import the font and set the default size*/
-html {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 18px
+
+body {
+    font-family: "Open Sans", sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    align-items: center;
+    justify-content: center;
+}
+
+header {
+    align-items: center;
+    background-image: url("../images/soup.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+}
+
+h1 {
+    font-weight: 300;
+    font-size: 100px;
+    color: white;
+}
+
+.div-display {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+
+main {
+    max-width: 70%;
+    align-items: center;
+    margin: auto;
+}
+
+#parte1 img {
+    width: 30em;
+    padding-top: 4em;
+    align-self: center;
+}
+
+#parte1 p {
+    padding-top: 4em;
+    font-size: 20px;
+    max-width: 40em;
+    line-height: 1.5em;
+    text-align: left;
+}
+
+#parte2 {
+    margin-top: 4em;
+}
+
+ul li {
+    list-style-type: "- ";
+    text-align: left;
+    line-height: 1.5em;
+}
+
+li {
+    font-size: 1em;
+    font-weight: 100;
+    text-align: left;
+}
+
+h3 {
+    font-size: 1.3em;
+    line-height: 3em;
+    font-weight: 400;
+    display: flex;
+    margin-top: 2em;
+    text-align: left;
+}
+
+#parte2 img {
+    width: 27em;
+    padding-top: 4em;
+    padding-bottom: 4em;
+    align-self: center;
+}
+
+ol {
+    margin-inline-start: 0;
+    padding-inline-start: 0;
+    margin-bottom: 4em;
+    margin-left: 0;
+}
+
+ol li {
+    text-align: left;
+    line-height: 1.5em;
+    margin-left: 0;
+    text-indent: 4px;
+    list-style-position: inside;
+}
+
+ol li::marker {
+    padding-left: 10px;
+    content: counter(list-item) ") ";
+    counter-reset: inherit;
+}
+
+#parte2,
+#parte3 {
+    border-top: 1px solid black;
 }
